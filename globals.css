@@ -1,0 +1,59 @@
+
+
+.spin {
+  animation: spin 0.85s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+
+.legend-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legend-list span {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 10px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.legend-list i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+
+.factor-stack {
+  display: grid;
+  gap: 10px;
+}
+
+.factor-row {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr) 44px;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.factor-row strong {
+  color: var(--text);
+  text-align: right;
+}
+
+.holding-row {
